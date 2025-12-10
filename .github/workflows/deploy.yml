@@ -28,6 +28,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "./"
           target: "/var/www/mi_web"
+          ssh_ignore_host: true
           strip_components: 0
 
       # 3. Construir y reiniciar contenedor en EC2
